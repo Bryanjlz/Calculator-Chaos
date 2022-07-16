@@ -1398,5 +1398,13 @@ PrefabInstance:
       propertyPath: boxParent
       value: 
       objectReference: {fileID: 743278220}
+    - target: {fileID: 7059750716905429476, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
+      propertyPath: dragCan
+      value: 
+      objectReference: {fileID: 103216430}
+    - target: {fileID: 7059750716905429476, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
+      propertyPath: restCan
+      value: 
+      objectReference: {fileID: 743278216}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
