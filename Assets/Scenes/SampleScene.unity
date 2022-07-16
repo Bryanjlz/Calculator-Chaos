@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 743278218}
   - component: {fileID: 743278217}
   m_Layer: 5
-  m_Name: Block
+  m_Name: RestArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -687,6 +687,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+--- !u!114 &1679451080 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6966281927752158751, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
+  m_PrefabInstance: {fileID: 1285889084651290054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1790157290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7451302468063297963, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
@@ -821,13 +832,17 @@ PrefabInstance:
     - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
       propertyPath: roundButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1679451080}
     - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
       propertyPath: genBoxParent
       value: 
       objectReference: {fileID: 1790157290}
     - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
       propertyPath: generateCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
+      propertyPath: carryOverCount
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
@@ -891,6 +906,22 @@ PrefabInstance:
       propertyPath: invManager
       value: 
       objectReference: {fileID: 3939354409043597905}
+    - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
+      propertyPath: dragArea
+      value: 
+      objectReference: {fileID: 103216434}
+    - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
+      propertyPath: restingArea
+      value: 
+      objectReference: {fileID: 743278220}
+    - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
+      propertyPath: roundButton
+      value: 
+      objectReference: {fileID: 1679451080}
+    - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
+      propertyPath: carryOverCount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2826953729778939262, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: invManager
       value: 

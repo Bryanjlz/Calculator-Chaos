@@ -8,11 +8,13 @@ public class InventoryAnchor : Anchored {
 	bool isFilled = false;
 	public override void Anchor(GameObject draggedBox) {
 		invManager.boxes.Add(gameObject);
+		invManager.CheckCarryOver();
 		isFilled = true;
 	}
 
 	public override void UnAnchor (GameObject draggedBox) {
 		invManager.boxes.Remove(gameObject);
+		invManager.CheckCarryOver();
 		isFilled = false;
 	}
 

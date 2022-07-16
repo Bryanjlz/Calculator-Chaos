@@ -10,7 +10,6 @@ public class Equation : MonoBehaviour
 	[SerializeField] public List<EquationInputAnchor> inputAnchors;
 	[SerializeField] public EquationOutputAnchor outputAnchor;
 	[SerializeField] GameObject boxPrefab;
-	[SerializeField] InventoryManager invManager;
 	public GameObject restCan;
 	public GameObject dragCan;
 
