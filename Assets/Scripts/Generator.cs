@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Generator : MonoBehaviour {
-	[SerializeField] Color inactive;
-	[SerializeField] GameObject genBoxParent;
+	[SerializeField] int carryOverCount;
 	[SerializeField] List<int> generationPool;
 	[SerializeField] int generateCount;
 	[SerializeField] GameObject boxPrefab;
@@ -13,6 +12,9 @@ public class Generator : MonoBehaviour {
 	[SerializeField] InventoryManager invManager;
 	[SerializeField] GameObject draggingTextCanvas;
 	[SerializeField] GameObject restingTextCanvas;
+	[SerializeField] Button roundButton;
+	[SerializeField] Color inactive;
+	[SerializeField] GameObject genBoxParent;
 
 	private void Start() {
 		for (int i = 0; i < 6; i++) {
@@ -31,6 +33,11 @@ public class Generator : MonoBehaviour {
 			generatedPool.Add(generationPool[Random.Range(0, generationPool.Count)]);
 			CreateBox(generatedPool[i]);
 		}
+		roundButton.transform.GetChild(0).GetComponent<Text>().text = "End Turn";
+		if (invManager.boxes.Count > carryOverCount) {
+			roundButton.interactable = false;
+        }
+
 	}
 
 	public void CreateBox(int number) {
