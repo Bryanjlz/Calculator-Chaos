@@ -11,7 +11,7 @@ public class InventoryAnchor : Anchored {
 
 	public override void UnAnchor (GameObject draggedBox) {
 		isFilled = false;
-    }
+	}
 
 	public override bool IsAnchorable(GameObject draggedBox) {
 		return !isFilled;
