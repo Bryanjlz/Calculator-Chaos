@@ -394,7 +394,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743278216}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1386,6 +1386,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Operations
       objectReference: {fileID: 0}
+    - target: {fileID: 6282587743663778541, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
+      propertyPath: dragCan
+      value: 
+      objectReference: {fileID: 103216430}
+    - target: {fileID: 6282587743663778541, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
+      propertyPath: restCan
+      value: 
+      objectReference: {fileID: 743278216}
     - target: {fileID: 6282587743663778541, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
       propertyPath: boxParent
       value: 

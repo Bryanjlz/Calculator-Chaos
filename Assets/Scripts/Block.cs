@@ -41,6 +41,11 @@ public class Block : MonoBehaviour {
 			currSprite.sortingLayerName = "Dragging Block";
 			gameObject.transform.SetParent(draggingTextCanvas.transform);
 
+			// If on output anchor, run stuff on click
+			if (currentAnchor.GetType()  == typeof(EquationOutputAnchor)) {
+				((EquationOutputAnchor)currentAnchor).PickUp();
+			}
+
 			isDragging = true;
 		}
 	}

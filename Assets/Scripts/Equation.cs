@@ -5,18 +5,20 @@ using UnityEngine.UI;
 
 public class Equation : MonoBehaviour
 {
+	[SerializeField] GameObject restCan;
+	[SerializeField] GameObject dragCan;
 	[SerializeField] List<Operator> op;
 	[SerializeField] List<Text> opText;
-	[SerializeField] List<EquationInputAnchor> inputAnchors;
+	[SerializeField] public List<EquationInputAnchor> inputAnchors;
 	[SerializeField] public EquationOutputAnchor outputAnchor;
 	[SerializeField] GameObject boxPrefab;
 	[SerializeField] Transform boxParent;
 
-    private void Start() {
+	private void Start() {
 		SetOperator(op[0], 0);
-    }
+	}
 
-    public void SetOperator (Operator o, int index) {
+	public void SetOperator (Operator o, int index) {
 		op[index] = o;
 		switch (op[index]) {
 			case Operator.ADD:
@@ -36,14 +38,14 @@ public class Equation : MonoBehaviour
 		foreach (EquationInputAnchor anchor in inputAnchors) {
 			if (!anchor.isFilled) {
 				return;
-            }
-        }
+			}
+		}
 
 		// do the math
 		int result = math (inputAnchors[0].number, inputAnchors[1].number, op[0]);
 		if (op.Count > 1) {
 			result = math (result, inputAnchors[2].number, op[1]);
-        }
+		}
 
 		// Create preview
 		CreateOutputBox(result);
@@ -68,6 +70,7 @@ public class Equation : MonoBehaviour
 		block.SetNumber(number);
 		block.transform.position = (Vector2)outputAnchor.gameObject.transform.position;
 		block.currentAnchor = outputAnchor;
+		block.SetTextCanvas(restCan, dragCan);
 		outputAnchor.box = boxObject;
 		// Set transparent
 		boxObject.GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, 0.4f);

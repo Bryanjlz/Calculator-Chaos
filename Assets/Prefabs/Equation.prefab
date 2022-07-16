@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eq: {fileID: 5577058864222807984}
+  sprite: {fileID: 8140230803106075583}
   number: 0
   box: {fileID: 0}
   isFilled: 0
@@ -151,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859e14d2fc05b2c47adba1a03daf6719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restCan: {fileID: 0}
+  dragCan: {fileID: 0}
   op: 01000000
   opText:
   - {fileID: 4226332018345624265}
@@ -338,6 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eq: {fileID: 5577058864222807984}
+  sprite: {fileID: 5931314365464613033}
   number: 0
   box: {fileID: 0}
   isFilled: 0
@@ -520,3 +524,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   box: {fileID: 0}
+  eq: {fileID: 5577058864222807984}
