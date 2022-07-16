@@ -6,7 +6,13 @@ using UnityEngine.UI;
 public class TargetAnchor : Anchored
 {
     [SerializeField] int targetNumber;
+    [SerializeField] TargetManager tManager;
     bool isFilled = false;
+
+    public bool getIsFilled()
+    {
+        return isFilled;
+    }
     public void Start()
     {
         gameObject.transform.GetChild(0).GetComponent<Text>().text = targetNumber.ToString();
@@ -17,7 +23,14 @@ public class TargetAnchor : Anchored
     {
         Block currentBlock = draggedBox.GetComponent<Block>();
         currentBlock.GetComponent<Block>().enabled = false;
+        currentBlock.GetComponent<SpriteRenderer>().sprite = currentBlock.getTargetSprite();
         isFilled = true;
+
+        if (tManager.checkWin())
+        {
+            tManager.celebrate();
+            tManager.setCompleted(true);
+        }
     }
     public override void UnAnchor(GameObject draggedBox)
     {

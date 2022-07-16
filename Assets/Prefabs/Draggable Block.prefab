@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 0
   currentAnchor: {fileID: 0}
+  targetSprite: {fileID: 21300000, guid: 940bf82c8fb65224987879d370ac8b64, type: 3}
 --- !u!61 &8771472688805157856
 BoxCollider2D:
   m_ObjectHideFlags: 0

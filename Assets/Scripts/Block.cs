@@ -9,7 +9,12 @@ public class Block : MonoBehaviour {
 	bool isDragging = false;
 	GameObject draggingTextCanvas;
 	GameObject restingTextCanvas;
+	[SerializeField] Sprite targetSprite;
 
+	public Sprite getTargetSprite()
+    {
+		return targetSprite;
+    }
 	public void SetNumber (int n) {
 		number = n;
 		gameObject.transform.GetChild(0).GetComponent<Text>().text = n.ToString();

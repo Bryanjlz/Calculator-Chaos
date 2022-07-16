@@ -920,7 +920,7 @@ PrefabInstance:
       objectReference: {fileID: 1679451080}
     - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: carryOverCount
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2826953729778939262, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: invManager
