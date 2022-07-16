@@ -369,9 +369,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactive: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  boxes: {fileID: 7451302468063297963}
+  genBoxParent: {fileID: 7451302468063297963}
   generationPool: 
   generateCount: 0
+  boxPrefab: {fileID: 8771472688805157858, guid: d74363935b1a2814182e4e95023c3418, type: 3}
+  boxParent: {fileID: 0}
+  invManager: {fileID: 0}
 --- !u!1 &2661438849067985805
 GameObject:
   m_ObjectHideFlags: 0
