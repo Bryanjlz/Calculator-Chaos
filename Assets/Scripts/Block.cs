@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Drag : MonoBehaviour {
-	Vector2 currentAnchor;
+public class Block : MonoBehaviour {
+	public int number;
+	public Anchored currentAnchor;
 	bool isDragging = false;
 
-	// Starting Anchor
-	private void Start() {
-		currentAnchor = transform.position;
+	public void SetNumber (int n) {
+		number = n;
+		gameObject.transform.GetChild(0).GetComponent<Text>().text = n.ToString();
 	}
 
 	private void Update() {
@@ -34,19 +36,29 @@ public class Drag : MonoBehaviour {
 		foreach (GameObject anchor in GameObject.FindGameObjectsWithTag("Anchor")) {
 			if (Vector2.Distance(transform.position, anchor.transform.position) <= 1f) {
 				Anchored anchorScript = anchor.GetComponent<Anchored>();
-				// Check if anchorable
-				if (anchorScript != null && anchorScript.IsAnchorable(gameObject)) {
-					// Set anchor
-					currentAnchor = anchor.transform.position;
-					transform.position = (Vector2)anchor.transform.position;
-					// Run anchored script
-					anchorScript.Anchor(gameObject);
+				if (TryAnchor (anchorScript)) {
 					return;
 				}
 			}
 		}
-
 		// If none, go back to prev
-		transform.position = currentAnchor;
+		transform.position = (Vector2)currentAnchor.transform.position;
+	}
+
+	public bool TryAnchor (Anchored anchor) {
+		// Check if anchorable
+		if (anchor != null && anchor.IsAnchorable(gameObject)) {
+			// Unanchor
+			if (currentAnchor != null) {
+				currentAnchor.UnAnchor(gameObject);
+			}
+			// Set anchor
+			currentAnchor = anchor;
+			transform.position = (Vector2)anchor.transform.position;
+			// Run anchored script
+			anchor.Anchor(gameObject);
+			return true;
+		}
+		return false;
 	}
 }

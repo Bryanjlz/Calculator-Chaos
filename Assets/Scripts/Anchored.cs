@@ -4,5 +4,6 @@ using UnityEngine;
 
 public abstract class Anchored : MonoBehaviour {
 	public abstract void Anchor(GameObject draggedBox);
+	public abstract void UnAnchor(GameObject draggedBox);
 	public abstract bool IsAnchorable(GameObject draggedBox);
 }
