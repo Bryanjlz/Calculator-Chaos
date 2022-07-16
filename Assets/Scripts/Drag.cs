@@ -33,9 +33,16 @@ public class Drag : MonoBehaviour {
 		// Look for close anchor to go to
 		foreach (GameObject anchor in GameObject.FindGameObjectsWithTag("Anchor")) {
 			if (Vector2.Distance(transform.position, anchor.transform.position) <= 1.02f) {
-				currentAnchor = anchor.transform.position;
-				transform.position = (Vector2) anchor.transform.position;
-				return;
+				Anchored anchorScript = anchor.GetComponent<Anchored>();
+				// Check if anchorable
+				if (anchorScript.IsAnchorable(gameObject)) {
+					// Set anchor
+					currentAnchor = anchor.transform.position;
+					transform.position = (Vector2)anchor.transform.position;
+					// Run anchored script
+					anchorScript.Anchor(gameObject);
+					return;
+				}
 			}
 		}
 
