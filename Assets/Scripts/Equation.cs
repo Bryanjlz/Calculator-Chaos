@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class Equation : MonoBehaviour
 {
-	[SerializeField] GameObject restCan;
-	[SerializeField] GameObject dragCan;
-	[SerializeField] List<Operator> op;
+	[SerializeField] public List<Operator> op;
 	[SerializeField] List<Text> opText;
 	[SerializeField] public List<EquationInputAnchor> inputAnchors;
 	[SerializeField] public EquationOutputAnchor outputAnchor;
 	[SerializeField] GameObject boxPrefab;
-	[SerializeField] Transform boxParent;
+	public GameObject restCan;
+	public GameObject dragCan;
 
 	private void Start() {
 		SetOperator(op[0], 0);
@@ -65,7 +64,7 @@ public class Equation : MonoBehaviour
 
 	private void CreateOutputBox (int number) {
 		GameObject boxObject = Instantiate(boxPrefab);
-		boxObject.transform.SetParent(boxParent);
+		boxObject.transform.SetParent(restCan.transform);
 		Block block = boxObject.GetComponent<Block>();
 		block.SetNumber(number);
 		block.transform.position = (Vector2)outputAnchor.gameObject.transform.position;
