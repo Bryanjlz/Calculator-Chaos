@@ -42,3 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Draggable Blocks
+    uniqueID: 3061245177
+    locked: 0
+  - name: Draggable block text
+    uniqueID: 4218616823
+    locked: 0
+  - name: Dragging Block
+    uniqueID: 2576171397
+    locked: 0
+  - name: Dragging Block Text
+    uniqueID: 2266301625
+    locked: 0

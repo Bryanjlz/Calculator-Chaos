@@ -7,10 +7,17 @@ public class Block : MonoBehaviour {
 	public int number;
 	public Anchored currentAnchor;
 	bool isDragging = false;
+	GameObject draggingTextCanvas;
+	GameObject restingTextCanvas;
 
 	public void SetNumber (int n) {
 		number = n;
 		gameObject.transform.GetChild(0).GetComponent<Text>().text = n.ToString();
+	}
+	public void SetTextCanvas(GameObject restingCanvas, GameObject draggingCanvas)
+	{
+		draggingTextCanvas = draggingCanvas;
+		restingTextCanvas = restingCanvas;
 	}
 
 	private void Update() {
@@ -18,6 +25,10 @@ public class Block : MonoBehaviour {
 		if (isDragging) {
 			transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			if (Input.GetMouseButtonUp(0)) {
+				SpriteRenderer currSprite = gameObject.GetComponent<SpriteRenderer>();
+				currSprite.sortingLayerName = "Draggable Blocks";
+				gameObject.transform.SetParent(restingTextCanvas.transform);
+
 				Release();
 			} 
 		}
@@ -26,6 +37,10 @@ public class Block : MonoBehaviour {
 	// Drag
 	private void OnMouseOver() {
 		if (Input.GetMouseButtonDown(0)) {
+			SpriteRenderer currSprite = gameObject.GetComponent<SpriteRenderer>();
+			currSprite.sortingLayerName = "Dragging Block";
+			gameObject.transform.SetParent(draggingTextCanvas.transform);
+
 			isDragging = true;
 		}
 	}

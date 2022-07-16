@@ -11,6 +11,8 @@ public class Generator : MonoBehaviour {
 	[SerializeField] GameObject boxPrefab;
 	[SerializeField] Transform boxParent;
 	[SerializeField] InventoryManager invManager;
+	[SerializeField] GameObject draggingTextCanvas;
+	[SerializeField] GameObject restingTextCanvas;
 
 	private void Start() {
 		for (int i = 0; i < 6; i++) {
@@ -36,6 +38,7 @@ public class Generator : MonoBehaviour {
 		boxObject.transform.SetParent(boxParent);
 		Block block = boxObject.GetComponent<Block>();
 		block.SetNumber(number);
+		block.SetTextCanvas(restingTextCanvas, draggingTextCanvas);
 		foreach (InventoryAnchor anchor in invManager.anchors) {
 			if (block.TryAnchor(anchor)) {
 				return;
