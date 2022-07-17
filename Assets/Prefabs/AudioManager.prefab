@@ -47,7 +47,7 @@ MonoBehaviour:
   sounds:
   - name: music
     clip: {fileID: 8300000, guid: 9845cec8ef86499498cb76cf1054b0e0, type: 3}
-    volume: 0.648
+    volume: 0.432
     pitch: 1
     loop: 1
     source: {fileID: 0}
