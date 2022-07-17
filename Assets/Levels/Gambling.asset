@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
-  m_Name: Full House
+  m_Name: Gambling
   m_EditorClassIdentifier: 
-  numRounds: 3
-  invSlots: 12
-  genCount: 5
-  generationPool: 0b000000060000000200000007000000
-  targets: 0100000001000000010000000d0000000d000000
+  numRounds: 10
+  invSlots: 10
+  genCount: 1
+  generationPool: 630000000000000000000000000000000000000000000000
+  targets: 63000000
   isRandomEquation: 0
   numEquations: 0
-  operators: 00000000010000000100000002000000
-  text: []
-  pos: 
+  operators: 
+  text:
+  - TEST YOUR LUCK
+  pos: 03000000
