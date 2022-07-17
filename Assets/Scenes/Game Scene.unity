@@ -1509,7 +1509,7 @@ PrefabInstance:
     - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
       propertyPath: level
       value: 
-      objectReference: {fileID: 11400000, guid: c8fa0091222629a4190c90fbaf587a6e, type: 2}
+      objectReference: {fileID: 11400000, guid: 7ff982113d393fb44bbc487e78a5a6c6, type: 2}
     - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
       propertyPath: generator
       value: 

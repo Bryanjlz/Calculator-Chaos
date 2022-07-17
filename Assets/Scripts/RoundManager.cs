@@ -21,7 +21,7 @@ public class RoundManager : MonoBehaviour
 
 	//save data
 	public List<int> inventoryNumbers;
-	public List<int> completeTargets;
+	public List<(int,int)> completeTargets;
 
 	private void Start() {
 		// Get Level
@@ -65,7 +65,11 @@ public class RoundManager : MonoBehaviour
 	}
 
 	private void Load () {
-		List<GameObject> targetBoxes = generator.Generate(completeTargets);
+		List<int> targetList = new List<int>();
+		for (int i = 0; i < completeTargets.Count; i++) {
+			targetList.Add(completeTargets[i].Item1);
+        }
+		List<GameObject> targetBoxes = generator.Generate(targetList);
 		targetManager.LoadTargets(completeTargets, targetBoxes);
 		generator.Generate(inventoryNumbers);
 	}

@@ -40,11 +40,12 @@ public class TargetManager : MonoBehaviour
 		SceneManager.LoadScene("Win",LoadSceneMode.Additive);
 	}
 
-	public List<int> GetCompleted () {
-		List<int> completeTargets = new List<int>();
-		foreach (TargetAnchor ta in targets) {
+	public List<(int,int)> GetCompleted () {
+		List<(int, int) > completeTargets = new List<(int,int)>();
+		for(int i = 0; i < targets.Count; i++) {
+			TargetAnchor ta = targets[i];
 			if (ta.isFilled && !ta.isDead) {
-				completeTargets.Add(ta.targetNumber);
+				completeTargets.Add((ta.targetNumber,i));
 			}
 		}
 		return completeTargets;
@@ -58,12 +59,13 @@ public class TargetManager : MonoBehaviour
 		}
 		completeCounter = 0;
 	}
-	public void LoadTargets(List<int> completeTargets, List<GameObject> targetBoxes) {
+	public void LoadTargets(List<(int,int)> completeTargets, List<GameObject> targetBoxes) {
 		for (int i = 0; i < completeTargets.Count; i++) {
 			Transform box = targetBoxes[i].transform;
-			int num = completeTargets[i];
-			foreach (TargetAnchor ta in targets) {
-				if (ta.targetNumber == num && !ta.isFilled) {
+			int num = completeTargets[i].Item1;
+			for (int j = 0; j < targets.Count; j++) {
+				TargetAnchor ta = targets[j];
+				if (ta.targetNumber == num && !ta.isFilled && j == completeTargets[i].Item2) {
 					box.position = ta.transform.position;
 					box.GetComponent<Block>().TryAnchor(ta);
 				}
