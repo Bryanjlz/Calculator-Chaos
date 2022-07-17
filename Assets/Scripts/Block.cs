@@ -56,15 +56,15 @@ public class Block : MonoBehaviour {
 	}
 
 	private void Release() {
-		// sound!
-		FindObjectOfType<AudioManager>().Play("click");
-
 		isDragging = false;
 		// Look for close anchor to go to
 		foreach (GameObject anchor in GameObject.FindGameObjectsWithTag("Anchor")) {
 			if (Vector2.Distance(transform.position, anchor.transform.position) <= 1f) {
 				Anchored anchorScript = anchor.GetComponent<Anchored>();
 				if (TryAnchor (anchorScript)) {
+					// sound!
+					FindObjectOfType<AudioManager>().Play("click");
+
 					return;
 				}
 			}

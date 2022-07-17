@@ -20,6 +20,9 @@ public class TargetAnchor : Anchored {
 		tManager.completeCounter++;
 		iManager.CheckCarryOver();
 
+		// sound!
+		FindObjectOfType<AudioManager>().Play("targeted");
+
 		if (tManager.checkWin()) {
 			tManager.celebrate();
 		}
