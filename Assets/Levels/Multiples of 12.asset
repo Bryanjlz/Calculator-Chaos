@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
-  m_Name: Kevin Test 1
+  m_Name: Multiples of 12
   m_EditorClassIdentifier: 
   numRounds: 3
-  invSlots: 9
-  genCount: 6
-  generationPool: 01000000030000000500000007000000090000000b000000
-  targets: 1200000014000000180000001900000032000000
+  invSlots: 10
+  genCount: 5
+  generationPool: 0200000003000000040000000a0000000b0000000c000000
+  targets: 0c000000180000002400000030000000
   isRandomEquation: 0
-  numEquations: 4
-  operators: 00000000000000000100000002000000
+  numEquations: 3
+  operators: 00000000010000000200000002000000
   text: []
-  pos: []
+  pos: 

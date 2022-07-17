@@ -20,6 +20,5 @@ MonoBehaviour:
   isRandomEquation: 0
   numEquations: 4
   operators: 01000000010000000200000002000000
-  text:
-  - The limit is 99
-  pos: []
+  text: []
+  pos: 

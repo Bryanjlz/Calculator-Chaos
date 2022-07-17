@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
-  m_Name: 99
+  m_Name: tutorial 3
   m_EditorClassIdentifier: 
-  numRounds: 6
-  invSlots: 12
+  numRounds: 2
+  invSlots: 6
   genCount: 4
-  generationPool: 010000000100000002000000040000000800000010000000
-  targets: 030000000c00000063000000
+  generationPool: 01000000feffffff03000000
+  targets: 0000000000000000
   isRandomEquation: 0
-  numEquations: 3
-  operators: 000000000100000002000000
+  numEquations: 0
+  operators: 0000000001000000
   text:
-  - THE LIMIT IS MIN -99, MAX 99
-  pos: 04000000
+  - YOU CANNOT END ROUND IF THERE IS NOT ENOUGH SPACE IN YOUR INVENTORY TO FIT NEWLY
+    GENERATED NUMBERS OR IF THERE ARE NUMBERS CURRENTLY IN FUNCTIONS
+  pos: 03000000

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
   m_Name: Even The Odds
   m_EditorClassIdentifier: 
-  numRounds: 4
+  numRounds: 3
   invSlots: 8
   genCount: 4
   generationPool: 030000000500000007000000

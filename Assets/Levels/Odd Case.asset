@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
-  m_Name: 99
+  m_Name: Odd Case
   m_EditorClassIdentifier: 
-  numRounds: 6
-  invSlots: 12
-  genCount: 4
-  generationPool: 010000000100000002000000040000000800000010000000
-  targets: 030000000c00000063000000
+  numRounds: 4
+  invSlots: 10
+  genCount: 5
+  generationPool: 01000000030000000500000007000000090000000b000000
+  targets: 1200000014000000180000001c00000032000000
   isRandomEquation: 0
-  numEquations: 3
-  operators: 000000000100000002000000
-  text:
-  - THE LIMIT IS MIN -99, MAX 99
-  pos: 04000000
+  numEquations: 4
+  operators: 01000000000000000000000002000000
+  text: []
+  pos: 
