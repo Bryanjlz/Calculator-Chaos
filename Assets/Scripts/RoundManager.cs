@@ -26,7 +26,6 @@ public class RoundManager : MonoBehaviour
 		if (LevelHolder.self != null) {
 			level = LevelHolder.self.levelData[LevelHolder.self.curLevel];
 		}
-
 		// Load Level
 		LoadLevelData(level.numRounds);
 		equationManager.LoadLevelData(level.isRandomEquation, level.numEquations, level.operators);
@@ -40,11 +39,12 @@ public class RoundManager : MonoBehaviour
 		FindObjectOfType<AudioManager>().Play("generate");
 
 		currentRound++;
-		text.text = "Round " + currentRound + "/" + maxRounds;
+		text.text = "ROUND " + currentRound + "/" + maxRounds;
 		equationManager.resetEquations();
 		generator.Generate(generator.RandomPool());
 		inventoryManager.CheckCarryOver();
 		Save();
+		UndoRound();
 	}
 
 	public bool IsLastRound () {
@@ -82,6 +82,9 @@ public class RoundManager : MonoBehaviour
     }
 
 	public void Pause () {
+		// sound!
+		FindObjectOfType<AudioManager>().Play("click");
+
 		pause = true;
     }
 
@@ -91,6 +94,13 @@ public class RoundManager : MonoBehaviour
 
 	public void LoadLevelData (int numRounds) {
 		maxRounds = numRounds;
-		text.text = "Round " + currentRound + "/" + maxRounds;
+		text.text = "ROUND " + currentRound + "/" + maxRounds;
+	}
+
+	public void Restart()
+	{
+		// sound!
+		FindObjectOfType<AudioManager>().Play("click");
+		SceneManager.LoadScene("Game Scene");
 	}
 }

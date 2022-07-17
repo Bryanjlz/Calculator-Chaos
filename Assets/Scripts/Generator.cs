@@ -28,7 +28,7 @@ public class Generator : MonoBehaviour {
 			boxes.Add(CreateBox(generatedPool[i]));
 		}
 		string oldText = roundButton.transform.GetChild(0).GetComponent<Text>().text;
-		roundButton.transform.GetChild(0).GetComponent<Text>().text = "End Round (Generate " + generateCount + ")";
+		roundButton.transform.GetChild(0).GetComponent<Text>().text = "END ROUND (GENERATE " + generateCount + ")";
 		return boxes;
 	}
 
@@ -58,6 +58,6 @@ public class Generator : MonoBehaviour {
             }
 		}
 
-		roundButton.GetComponentInChildren<Text>().text = "Generate " + genCount + " from selection";
+		roundButton.GetComponentInChildren<Text>().text = "GENERATE (" + genCount + ") FROM SELECTION";
 	}
 }
