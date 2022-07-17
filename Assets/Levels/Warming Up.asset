@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
   m_Name: Warming Up
   m_EditorClassIdentifier: 
-  numRounds: 0
-  invSlots: 0
-  genCount: 0
-  generationPool: 
-  targets: 
+  numRounds: 3
+  invSlots: 6
+  genCount: 3
+  generationPool: 020000000300000005000000
+  targets: 0400000009000000
   isRandomEquation: 0
-  numEquations: 0
-  operators: 
+  numEquations: 2
+  operators: 0000000001000000
   text: []
   pos: 

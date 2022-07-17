@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
   m_Name: No Addition
   m_EditorClassIdentifier: 
-  numRounds: 0
-  invSlots: 0
-  genCount: 0
-  generationPool: 
-  targets: 
+  numRounds: 6
+  invSlots: 12
+  genCount: 4
+  generationPool: 03000000050000000c000000
+  targets: feffffff020000000a00000018000000
   isRandomEquation: 0
-  numEquations: 0
-  operators: 
+  numEquations: 4
+  operators: 01000000010000000100000001000000
   text: []
   pos: 

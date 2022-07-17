@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
   m_Name: Jumble
   m_EditorClassIdentifier: 
-  numRounds: 0
-  invSlots: 0
-  genCount: 0
-  generationPool: 
-  targets: 
+  numRounds: 8
+  invSlots: 12
+  genCount: 3
+  generationPool: 02000000030000000400000007000000080000000b000000
+  targets: 090000000c0000000e000000110000001500000018000000
   isRandomEquation: 0
-  numEquations: 0
-  operators: 
+  numEquations: 3
+  operators: 000000000100000002000000
   text: []
   pos: 

@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
   m_Name: The Nugget Incident
   m_EditorClassIdentifier: 
-  numRounds: 8
+  numRounds: 5
   invSlots: 12
-  genCount: 4
-  generationPool: 010000000200000004000000080000001000000020000000
-  targets: 030000000c00000063000000
+  genCount: 5
+  generationPool: 060000000b000000
+  targets: 2f00000032000000
   isRandomEquation: 0
-  numEquations: 3
-  operators: 000000000100000002000000
-  text:
-  - THE LIMIT IS 99
-  pos: []
+  numEquations: 4
+  operators: 00000000000000000000000000000000
+  text: []
+  pos: 

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
   m_Name: Even The Odds
   m_EditorClassIdentifier: 
-  numRounds: 3
-  invSlots: 6
-  genCount: 3
-  generationPool: ffffffff01000000
-  targets: 0000000000000000
+  numRounds: 4
+  invSlots: 8
+  genCount: 4
+  generationPool: 030000000500000007000000
+  targets: 02000000040000000200000004000000
   isRandomEquation: 0
   numEquations: 0
-  operators: 0000000001000000
+  operators: 00000000010000000000000001000000
   text: []
   pos: 
