@@ -8,7 +8,6 @@ public class Generator : MonoBehaviour {
 	[SerializeField] int generateCount;
 	[SerializeField] GameObject boxPrefab;
 	[SerializeField] InventoryManager invManager;
-	[SerializeField] RoundManager rManager;
 	[SerializeField] GameObject draggingTextCanvas;
 	[SerializeField] GameObject restingTextCanvas;
 	[SerializeField] Button roundButton;
@@ -25,16 +24,19 @@ public class Generator : MonoBehaviour {
 			}
 		}
 	}
-
-	public void Generate() {
-		rManager.ProgressRound();
+	public List<int> RandomPool () {
 		List<int> generatedPool = new List<int>();
 		for (int i = 0; i < generateCount; i++) {
 			generatedPool.Add(generationPool[Random.Range(0, generationPool.Count)]);
+		}
+		return generatedPool;
+	}
+
+	public void Generate(List<int> generatedPool) {
+		for (int i = 0; i < generatedPool.Count; i++) {
 			CreateBox(generatedPool[i]);
 		}
 		roundButton.transform.GetChild(0).GetComponent<Text>().text = "End Round";
-		invManager.CheckCarryOver();
 	}
 
 	public void CreateBox(int number) {

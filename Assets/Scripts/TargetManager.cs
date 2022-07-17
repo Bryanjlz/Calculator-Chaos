@@ -34,8 +34,19 @@ public class TargetManager : MonoBehaviour
 	{
 		isComplete = verdict;
 	}
+
 	public void celebrate()
 	{
 		Debug.Log("you win!");
 	}
+
+	public List<int> GetCompleted () {
+		List<int> completeTargets = new List<int>();
+		foreach (TargetAnchor ta in targets) {
+			if (ta.getIsFilled() && ta.deadBox == null) {
+				completeTargets.Add(ta.targetNumber);
+            }
+        }
+		return completeTargets;
+    }
 }

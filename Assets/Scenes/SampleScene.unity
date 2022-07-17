@@ -223,6 +223,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 32, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &299662541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7059750716905429476, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
+  m_PrefabInstance: {fileID: 6238779945369954460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21eef8d348760940a63b3aba1bd6245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +759,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6238779944961274828, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
   m_PrefabInstance: {fileID: 6238779945369954460}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024829327 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
+  m_PrefabInstance: {fileID: 1285889084651290054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6385cde001a6dad47a2597346c9433e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2067205846 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5081781850812968577, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
@@ -862,6 +884,18 @@ PrefabInstance:
     - target: {fileID: 1285889084916072653, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966281927752158751, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1499032955}
+    - target: {fileID: 6966281927752158751, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ProgressRound
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966281927752158751, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RoundManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
       propertyPath: rManager
@@ -1068,6 +1102,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1005832113}
     m_Modifications:
+    - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
+      propertyPath: generator
+      value: 
+      objectReference: {fileID: 2024829327}
+    - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
+      propertyPath: targetManager
+      value: 
+      objectReference: {fileID: 2067205847}
+    - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
+      propertyPath: equationManager
+      value: 
+      objectReference: {fileID: 299662541}
+    - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 3939354409043597905}
     - target: {fileID: 4797683715167320713, guid: a7794734925a92642818864227c93a2b, type: 3}
       propertyPath: m_Pivot.x
       value: 1

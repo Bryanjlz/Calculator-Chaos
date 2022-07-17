@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class TargetAnchor : Anchored
 {
-    [SerializeField] int targetNumber;
+    [SerializeField] public int targetNumber;
     [SerializeField] TargetManager tManager;
     [SerializeField] InventoryManager iManager;
-    [SerializeField] Sprite deadBox;
+    [SerializeField] public Sprite deadBox;
     bool isFilled = false;
     public bool getIsFilled()
     {

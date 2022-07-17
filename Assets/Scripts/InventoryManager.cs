@@ -30,4 +30,12 @@ public class InventoryManager : MonoBehaviour {
 			roundButton.interactable = false;
         }
 	}
+
+	public List<int> GetNumbers () {
+		List<int> numbers = new List<int>();
+		foreach (GameObject bo in boxes) {
+			numbers.Add(bo.GetComponent<Block>().number);
+        }
+		return numbers;
+    }
 }
