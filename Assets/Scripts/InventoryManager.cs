@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour {
 	[SerializeField] Transform restingArea;
 	[SerializeField] Transform dragArea;
 	[SerializeField] TargetManager tManager;
+	[SerializeField] RoundManager rManager;
 	public List<GameObject> boxes;
 	public List<InventoryAnchor> anchors;
 	
@@ -23,8 +24,7 @@ public class InventoryManager : MonoBehaviour {
 	}
 	
 	public void CheckCarryOver() {
-		print(restingArea.childCount + " " + dragArea.childCount + " " + tManager.completeCounter);
-		if (boxes.Count <= carryOverCount && boxes.Count == restingArea.childCount + dragArea.childCount - tManager.completeCounter) {
+		if (boxes.Count <= carryOverCount && boxes.Count == restingArea.childCount + dragArea.childCount - tManager.completeCounter && !rManager.IsLastRound()) {
 			roundButton.interactable = true;
 		} else {
 			roundButton.interactable = false;

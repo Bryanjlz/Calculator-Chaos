@@ -711,6 +711,17 @@ PrefabInstance:
       objectReference: {fileID: 3939354409043597905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+--- !u!114 &1499032955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
+  m_PrefabInstance: {fileID: 4797683714108504483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adcbbf717807864d93c47d53f973651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1679451080 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6966281927752158751, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
@@ -853,6 +864,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
+      propertyPath: rManager
+      value: 
+      objectReference: {fileID: 1499032955}
+    - target: {fileID: 8311814820710237037, guid: 1354bf871e804744eaa650a78ef772a2, type: 3}
       propertyPath: boxParent
       value: 
       objectReference: {fileID: 743278220}
@@ -925,6 +940,10 @@ PrefabInstance:
       propertyPath: dragArea
       value: 
       objectReference: {fileID: 103216434}
+    - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
+      propertyPath: rManager
+      value: 
+      objectReference: {fileID: 1499032955}
     - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: tManager
       value: 

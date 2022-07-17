@@ -8,6 +8,7 @@ public class Generator : MonoBehaviour {
 	[SerializeField] int generateCount;
 	[SerializeField] GameObject boxPrefab;
 	[SerializeField] InventoryManager invManager;
+	[SerializeField] RoundManager rManager;
 	[SerializeField] GameObject draggingTextCanvas;
 	[SerializeField] GameObject restingTextCanvas;
 	[SerializeField] Button roundButton;
@@ -26,6 +27,7 @@ public class Generator : MonoBehaviour {
 	}
 
 	public void Generate() {
+		rManager.ProgressRound();
 		List<int> generatedPool = new List<int>();
 		for (int i = 0; i < generateCount; i++) {
 			generatedPool.Add(generationPool[Random.Range(0, generationPool.Count)]);
