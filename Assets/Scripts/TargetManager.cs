@@ -8,9 +8,9 @@ public class TargetManager : MonoBehaviour
 	[SerializeField] Transform restArea;
 	List<TargetAnchor> targets;
 	public int completeCounter;
-	bool isComplete = false;
+
 	// Start is called before the first frame update
-	void Start()
+	void Awake()
 	{
 		targets = new List<TargetAnchor>();
 		foreach (TargetAnchor anchor in anchorParent.GetComponentsInChildren<TargetAnchor>())
@@ -23,17 +23,12 @@ public class TargetManager : MonoBehaviour
 	{
 		foreach (TargetAnchor target in targets)
 		{
-			if (target.getIsFilled() == false)
+			if (!target.isFilled)
 			{
 				return false;
 			}
 		}
 		return true;
-	}
-
-	public void setCompleted(bool verdict)
-	{
-		isComplete = verdict;
 	}
 
 	public void celebrate()
@@ -44,7 +39,7 @@ public class TargetManager : MonoBehaviour
 	public List<int> GetCompleted () {
 		List<int> completeTargets = new List<int>();
 		foreach (TargetAnchor ta in targets) {
-			if (ta.getIsFilled() && ta.deadBox == null) {
+			if (ta.isFilled && !ta.isDead) {
 				completeTargets.Add(ta.targetNumber);
 			}
 		}
@@ -71,4 +66,14 @@ public class TargetManager : MonoBehaviour
 			}
 		}
 	}
+
+	public void LoadLevelData (List<int> targetData) {
+		for (int i = 0; i < targets.Count; i++) {
+			if (i < targetData.Count) {
+				targets[i].LoadData(false, targetData[i]);
+			} else {
+				targets[i].LoadData(true, -1111);
+            }
+        }
+    }
 }
