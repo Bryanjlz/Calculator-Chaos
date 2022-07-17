@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RoundManager : MonoBehaviour
 {
@@ -69,18 +70,17 @@ public class RoundManager : MonoBehaviour
 		Load();
 	}
 
+	public void PauseScene() {
+		SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+		Pause();
+    }
+
 	public void Pause () {
 		pause = true;
-		foreach (Button b in buttons) {
-			b.interactable = false;
-        }
     }
 
 	public void UnPause() {
 		pause = false;
-		foreach (Button b in buttons) {
-			b.interactable = true;
-		}
 	}
 
 	public void LoadLevelData (int numRounds) {

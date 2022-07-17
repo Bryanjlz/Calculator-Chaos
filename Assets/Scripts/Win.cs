@@ -13,7 +13,6 @@ public class Win : MonoBehaviour
 	private float vel;
 	private Vector2 vel1;
 	void Start() {
-		GameObject.Find("Round").GetComponent<RoundManager>().Pause();
 		cg.alpha = 0f;
 	}
 
@@ -34,5 +33,10 @@ public class Win : MonoBehaviour
 
 	public void ChangeScene (string sceneName) {
 		SceneManager.LoadScene(sceneName);
+    }
+
+	public void Resume (string sceneName) {
+		GameObject.Find("Round").GetComponent<RoundManager>().UnPause();
+		SceneManager.UnloadSceneAsync(sceneName);
     }
 }

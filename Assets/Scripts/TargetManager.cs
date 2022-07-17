@@ -33,8 +33,7 @@ public class TargetManager : MonoBehaviour
 		return true;
 	}
 
-	public void celebrate()
-	{
+	public void celebrate() {
 		roundManager.Pause();
 		SceneManager.LoadScene("Win",LoadSceneMode.Additive);
 	}
