@@ -7,6 +7,7 @@ public class TargetAnchor : Anchored
 {
     [SerializeField] int targetNumber;
     [SerializeField] TargetManager tManager;
+    [SerializeField] InventoryManager iManager;
     bool isFilled = false;
 
     public bool getIsFilled()
@@ -25,6 +26,9 @@ public class TargetAnchor : Anchored
         currentBlock.GetComponent<Block>().enabled = false;
         currentBlock.GetComponent<SpriteRenderer>().sprite = currentBlock.getTargetSprite();
         isFilled = true;
+
+        tManager.completeCounter++;
+        iManager.CheckCarryOver();
 
         if (tManager.checkWin())
         {

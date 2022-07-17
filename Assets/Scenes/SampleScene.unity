@@ -597,6 +597,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1005832113}
     m_Modifications:
+    - target: {fileID: 2060656385024521, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: iManager
+      value: 
+      objectReference: {fileID: 3939354409043597905}
+    - target: {fileID: 2747154141556144802, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: iManager
+      value: 
+      objectReference: {fileID: 3939354409043597905}
+    - target: {fileID: 3926374935609886141, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: iManager
+      value: 
+      objectReference: {fileID: 3939354409043597905}
     - target: {fileID: 5081781850812968577, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -685,6 +697,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Targets
       objectReference: {fileID: 0}
+    - target: {fileID: 6562983414884801866, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: iManager
+      value: 
+      objectReference: {fileID: 3939354409043597905}
+    - target: {fileID: 8060424175507519645, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: iManager
+      value: 
+      objectReference: {fileID: 3939354409043597905}
+    - target: {fileID: 9210475102780606780, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: iManager
+      value: 
+      objectReference: {fileID: 3939354409043597905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
 --- !u!114 &1679451080 stripped
@@ -718,6 +742,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5081781850812968577, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
   m_PrefabInstance: {fileID: 1443317326}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2067205847 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2741521379295979238, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+  m_PrefabInstance: {fileID: 1443317326}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883db482fd2edaf4ea1313064e5f9da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1285889084651290054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -911,6 +946,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 103216434}
     - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
+      propertyPath: tManager
+      value: 
+      objectReference: {fileID: 2067205847}
+    - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: restingArea
       value: 
       objectReference: {fileID: 743278220}
@@ -920,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 1679451080}
     - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: carryOverCount
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2826953729778939262, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: invManager
