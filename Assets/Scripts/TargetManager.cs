@@ -35,6 +35,8 @@ public class TargetManager : MonoBehaviour
 
 	public void celebrate() {
 		roundManager.Pause();
+		// sound!
+		FindObjectOfType<AudioManager>().Play("win");
 		SceneManager.LoadScene("Win",LoadSceneMode.Additive);
 	}
 

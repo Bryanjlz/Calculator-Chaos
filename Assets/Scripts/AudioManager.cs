@@ -5,9 +5,22 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
+    public static AudioManager instance;
+
     // Start is called before the first frame update
     void Awake()
     {
+        DontDestroyOnLoad(gameObject);
+
+        if (instance == null)
+        {
+            instance = this;
+        } else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         foreach (Sound sound in sounds)
         {
             sound.source = gameObject.AddComponent<AudioSource>();

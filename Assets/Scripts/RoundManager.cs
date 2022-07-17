@@ -36,6 +36,9 @@ public class RoundManager : MonoBehaviour
 	}
 
 	public void ProgressRound () {
+		// sound!
+		FindObjectOfType<AudioManager>().Play("generate");
+
 		currentRound++;
 		text.text = "Round " + currentRound + "/" + maxRounds;
 		equationManager.resetEquations();
@@ -65,7 +68,10 @@ public class RoundManager : MonoBehaviour
 		generator.Generate(inventoryNumbers);
 	}
 
-	public void UndoRound () {
+	public void UndoRound() {
+		// sound!
+		FindObjectOfType<AudioManager>().Play("generate");
+
 		ResetRound();
 		Load();
 	}

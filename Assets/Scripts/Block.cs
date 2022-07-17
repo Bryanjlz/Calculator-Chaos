@@ -68,9 +68,6 @@ public class Block : MonoBehaviour {
 			if (Vector2.Distance(transform.position, anchor.transform.position) <= 1f) {
 				Anchored anchorScript = anchor.GetComponent<Anchored>();
 				if (TryAnchor (anchorScript)) {
-					// sound!
-					FindObjectOfType<AudioManager>().Play("click");
-
 					return;
 				}
 			}
@@ -80,17 +77,27 @@ public class Block : MonoBehaviour {
 	}
 
 	public bool TryAnchor (Anchored anchor) {
+		// sound!
+		FindObjectOfType<AudioManager>().Play("click");
+
 		// Check if anchorable
 		if (anchor != null && anchor.IsAnchorable(gameObject)) {
 			// Unanchor
 			if (currentAnchor != null) {
 				currentAnchor.UnAnchor(gameObject);
 			}
+
 			// Set anchor
 			currentAnchor = anchor;
 			transform.position = (Vector2)anchor.transform.position;
 			// Run anchored script
 			anchor.Anchor(gameObject);
+
+			if (anchor.GetType() == typeof(TargetAnchor))
+			{
+				// sound!
+				FindObjectOfType<AudioManager>().Play("targeted");
+			}
 			return true;
 		}
 		return false;
