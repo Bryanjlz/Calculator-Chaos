@@ -7,6 +7,7 @@ public class RoundManager : MonoBehaviour
 {
     [SerializeField] int maxRounds;
     [SerializeField] Text text;
+    [SerializeField] EquationManager equationManager;
     public int currentRound;
 
     private void Start() {
@@ -15,6 +16,7 @@ public class RoundManager : MonoBehaviour
     public void ProgressRound () {
         currentRound++;
         text.text = "Round " + currentRound + "/" + maxRounds;
+        equationManager.resetEquations();
     }
 
     public bool IsLastRound () {

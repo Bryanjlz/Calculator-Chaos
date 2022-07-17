@@ -33,9 +33,8 @@ public class Generator : MonoBehaviour {
 			generatedPool.Add(generationPool[Random.Range(0, generationPool.Count)]);
 			CreateBox(generatedPool[i]);
 		}
-		roundButton.transform.GetChild(0).GetComponent<Text>().text = "End Turn";
+		roundButton.transform.GetChild(0).GetComponent<Text>().text = "End Round";
 		invManager.CheckCarryOver();
-
 	}
 
 	public void CreateBox(int number) {

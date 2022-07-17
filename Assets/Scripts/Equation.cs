@@ -74,4 +74,12 @@ public class Equation : MonoBehaviour
 		// Set transparent
 		boxObject.GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, 0.4f);
 	}
+
+	public void resetInputs()
+    {
+		foreach (EquationInputAnchor anchor in inputAnchors)
+		{
+			anchor.Unlock();
+		}
+	}
 }

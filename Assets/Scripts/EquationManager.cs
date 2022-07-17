@@ -7,8 +7,10 @@ public class EquationManager : MonoBehaviour {
 	[SerializeField] GameObject restCan;
 	[SerializeField] GameObject dragCan;
 	[SerializeField] GameObject eqPrefab;
+	List<GameObject> equations;
 
 	private void Start() {
+		equations = new List<GameObject>();
 		for (int i = 0; i < equationNum; i++) {
 			List<Operator> o = new List<Operator>();
 			o.Add((Operator)Random.Range(0, 3));
@@ -24,6 +26,13 @@ public class EquationManager : MonoBehaviour {
 		eq.dragCan = dragCan;
 		eqObj.transform.SetParent(gameObject.transform);
 		eqObj.transform.position = pos;
-
+		equations.Add(eqObj);
+    }
+	public void resetEquations()
+    {
+		foreach (GameObject equation in equations)
+        {
+			equation.GetComponent<Equation>().resetInputs();
+        }
     }
 }
