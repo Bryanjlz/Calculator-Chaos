@@ -10,19 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
-  m_Name: tutorial 1
+  m_Name: tutorial 2
   m_EditorClassIdentifier: 
   numRounds: 3
-  invSlots: 4
-  genCount: 1
-  generationPool: 01000000
-  targets: 010000000100000001000000
+  invSlots: 6
+  genCount: 2
+  generationPool: 0100000002000000
+  targets: 06000000
   isRandomEquation: 0
-  numEquations: 0
+  numEquations: 2
   operators: 
-  text:
-  - YOU HAVE (X) ROUNDS TO CREATE ALL TARGET NUMBERS ON THE RIGHT
-  - CLICK GENERATE OR END ROUND TO RANDOMLY GENERATE (X) NUMBERS FROM THE GENERATABLE
-    POOL
-  - DRAG NUMBERS FROM YOUR INVENTORY INTO APPROPRIATE TARGETS TO COMPLETE THEM
-  pos: 010000000200000003000000
+  text: []
+  pos: 
