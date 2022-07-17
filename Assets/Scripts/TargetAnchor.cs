@@ -8,15 +8,26 @@ public class TargetAnchor : Anchored
     [SerializeField] int targetNumber;
     [SerializeField] TargetManager tManager;
     [SerializeField] InventoryManager iManager;
+    [SerializeField] Sprite deadBox;
     bool isFilled = false;
-
     public bool getIsFilled()
     {
         return isFilled;
     }
     public void Start()
     {
-        gameObject.transform.GetChild(0).GetComponent<Text>().text = targetNumber.ToString();
+        
+        if (deadBox != null)
+        {
+            gameObject.transform.GetComponent<SpriteRenderer>().sprite = deadBox;
+            gameObject.transform.GetChild(0).GetComponent<Text>().text = "";
+
+            // prevent interaction
+            isFilled = true;
+        } else
+        {
+            gameObject.transform.GetChild(0).GetComponent<Text>().text = targetNumber.ToString();
+        }
     }
 
     // Start is called before the first frame update
