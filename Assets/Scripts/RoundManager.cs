@@ -11,22 +11,28 @@ public class RoundManager : MonoBehaviour
 	[SerializeField] InventoryManager inventoryManager;
 	[SerializeField] TargetManager targetManager;
 	[SerializeField] Generator generator;
-	[SerializeField] LevelData yep;
+	[SerializeField] LevelData level;
 	public int currentRound;
 
 	//save data
 	public List<int> inventoryNumbers;
 	public List<int> completeTargets;
 
-    private void Start() {
-		LoadLevelData(yep.numRounds);
-		equationManager.LoadLevelData(yep.isRandomEquation, yep.numEquations, yep.operators);
-		inventoryManager.LoadLevelData(yep.invSlots);
-		targetManager.LoadLevelData(yep.targets);
-		generator.LoadLevelData(yep.genCount, yep.generationPool);
-    }
+	private void Start() {
+		// Get Level
+		if (LevelHolder.self != null) {
+			level = LevelHolder.self.curLevel;
+		}
 
-    public void ProgressRound () {
+		// Load Level
+		LoadLevelData(level.numRounds);
+		equationManager.LoadLevelData(level.isRandomEquation, level.numEquations, level.operators);
+		inventoryManager.LoadLevelData(level.invSlots);
+		targetManager.LoadLevelData(level.targets);
+		generator.LoadLevelData(level.genCount, level.generationPool);
+	}
+
+	public void ProgressRound () {
 		currentRound++;
 		text.text = "Round " + currentRound + "/" + maxRounds;
 		equationManager.resetEquations();

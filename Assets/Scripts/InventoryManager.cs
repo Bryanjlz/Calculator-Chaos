@@ -53,7 +53,6 @@ public class InventoryManager : MonoBehaviour {
 
 	public void LoadLevelData (int invSlots) {
 		for (int i = anchors.Count - 1; i >= invSlots; i--) {
-			print(i);
 			anchors[i].LoadLevelData(true);
         }
     }
