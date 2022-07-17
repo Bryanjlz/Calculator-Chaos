@@ -24,7 +24,7 @@ public class RoundManager : MonoBehaviour
 	private void Start() {
 		// Get Level
 		if (LevelHolder.self != null) {
-			level = LevelHolder.self.curLevel;
+			level = LevelHolder.self.levelData[LevelHolder.self.curLevel];
 		}
 
 		// Load Level

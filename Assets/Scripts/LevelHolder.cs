@@ -17,5 +17,5 @@ public class LevelHolder : MonoBehaviour
 	}
 
 	public List<LevelData> levelData;
-	public LevelData curLevel;
+	public int curLevel;
 }
