@@ -36,6 +36,6 @@ public class EquationInputAnchor : Anchored {
 	public void Unlock()
 	{
 		isFilled = false;
-		sprite.color = new Color(1f, 1f, 1f, 1f);
+		sprite.color = new Color(1f, 1f, 1f, 47f/255f);
 	}
 }
