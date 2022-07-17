@@ -18,6 +18,8 @@ public class LevelSelectButton : MonoBehaviour
 
 	public void LoadLevel() {
 		LevelHolder.self.curLevel = levelNum - 1;
+		// sound!
+		FindObjectOfType<AudioManager>().Play("click");
 		SceneManager.LoadScene("Game Scene");
 	}
 
