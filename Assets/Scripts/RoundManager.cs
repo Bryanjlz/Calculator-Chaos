@@ -15,6 +15,7 @@ public class RoundManager : MonoBehaviour
 	[SerializeField] Generator generator;
 	[SerializeField] LevelData level;
 	[SerializeField] GameObject tutorialTextPrefab;
+	[SerializeField] Transform tutorialParent;
 	public int currentRound;
 	public bool pause;
 
@@ -109,6 +110,7 @@ public class RoundManager : MonoBehaviour
 	public void LoadTutorialText (List<string> texts, List<int> poss) {
 		for (int i = 0; i < texts.Count; i++) {
 			GameObject text = Instantiate(tutorialTextPrefab);
+			text.transform.SetParent(tutorialParent);
 			text.GetComponent<TutorialText>().SetText(texts[i], poss[i]);
 		}
     }
