@@ -921,26 +921,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1005832113}
     m_Modifications:
-    - target: {fileID: 112070100196384556, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 213004885216914727, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 992967230544978136, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 1691037055283233572, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 2011938905048216261, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
     - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: dragArea
       value: 
@@ -959,12 +939,8 @@ PrefabInstance:
       objectReference: {fileID: 1679451080}
     - target: {fileID: 2126955423485909465, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: carryOverCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2826953729778939262, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
     - target: {fileID: 3939354410459221196, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
       propertyPath: m_Name
       value: Inventory
@@ -1053,38 +1029,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140321808974833438, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 4261937672628509171, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 4500510619580402965, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 4505921976827611899, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 6963975024103370991, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 8136080279459947178, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 8454924224869334170, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
-    - target: {fileID: 8670086837627241438, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
-      propertyPath: invManager
-      value: 
-      objectReference: {fileID: 3939354409043597905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 702edc541aa5f4a49a5623e71a72c7b3, type: 3}
 --- !u!114 &3939354409043597905 stripped
@@ -1290,18 +1234,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Operations
       objectReference: {fileID: 0}
-    - target: {fileID: 6282587743663778541, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
-      propertyPath: dragCan
-      value: 
-      objectReference: {fileID: 103216430}
-    - target: {fileID: 6282587743663778541, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
-      propertyPath: restCan
-      value: 
-      objectReference: {fileID: 743278216}
-    - target: {fileID: 6282587743663778541, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
-      propertyPath: boxParent
-      value: 
-      objectReference: {fileID: 743278220}
     - target: {fileID: 7059750716905429476, guid: 15332aa2d7b59eb458f7adb6132e7490, type: 3}
       propertyPath: dragCan
       value: 

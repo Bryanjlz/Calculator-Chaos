@@ -449,11 +449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6385cde001a6dad47a2597346c9433e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carryOverCount: 0
   generationPool: 
   generateCount: 0
   boxPrefab: {fileID: 8771472688805157858, guid: d74363935b1a2814182e4e95023c3418, type: 3}
-  boxParent: {fileID: 0}
   invManager: {fileID: 0}
   draggingTextCanvas: {fileID: 0}
   restingTextCanvas: {fileID: 0}
