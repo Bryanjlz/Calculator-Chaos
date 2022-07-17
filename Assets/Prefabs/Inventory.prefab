@@ -98,7 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &1782465609827730719
 GameObject:
@@ -198,7 +199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &2646064243724456579
 GameObject:
@@ -298,7 +300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &3187761960342951019
 GameObject:
@@ -398,7 +401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &3939354408449747907
 GameObject:
@@ -527,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e22c0de52a23041af746111299eb28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carryOverCount: 0
+  carryOverCount: 3
   anchorParent: {fileID: 8620246430493448699}
   roundButton: {fileID: 0}
   restingArea: {fileID: 0}
@@ -634,7 +638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &4724969272610904784
 GameObject:
@@ -734,7 +739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &5651040014246503961
 GameObject:
@@ -834,7 +840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &6482617795836275083
 GameObject:
@@ -934,7 +941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &6711355703509935374
 GameObject:
@@ -1034,7 +1042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &7140832922676278039
 GameObject:
@@ -1134,7 +1143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &7556852637069761877
 GameObject:
@@ -1234,7 +1244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0
 --- !u!1 &8620246430493448699
 GameObject:
@@ -1377,5 +1388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invManager: {fileID: 2126955423485909465}
-  deadBox: {fileID: 0}
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isDead: 0
   isFilled: 0

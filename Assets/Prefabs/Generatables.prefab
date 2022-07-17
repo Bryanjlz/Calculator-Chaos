@@ -319,7 +319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Generators
+  m_Text: Generatables
 --- !u!1 &1285889084605430507
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,15 +449,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6385cde001a6dad47a2597346c9433e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generationPool: 
-  generateCount: 0
+  generationPool: 010000000300000005000000
+  generateCount: 3
   boxPrefab: {fileID: 8771472688805157858, guid: d74363935b1a2814182e4e95023c3418, type: 3}
   invManager: {fileID: 0}
   draggingTextCanvas: {fileID: 0}
   restingTextCanvas: {fileID: 0}
   roundButton: {fileID: 6966281927752158751}
-  inactive: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
   genBoxParent: {fileID: 7451302468063297963}
+  deadBox: {fileID: 0}
 --- !u!1 &2661438849067985805
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,9 +745,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8311814820710237037}
-        m_TargetAssemblyTypeName: Generator, Assembly-CSharp
-        m_MethodName: Generate
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: RoundManager, Assembly-CSharp
+        m_MethodName: ProgressRound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

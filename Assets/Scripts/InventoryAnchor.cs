@@ -6,18 +6,9 @@ using UnityEngine.UI;
 public class InventoryAnchor : Anchored {
 	[SerializeField] InventoryManager invManager;
 	[SerializeField] public Sprite deadBox;
-
-	public void Start()
-	{
-		if (deadBox != null)
-		{
-			gameObject.transform.GetComponent<SpriteRenderer>().sprite = deadBox;
-
-			// prevent interaction
-			isFilled = true;
-		}
-	}
+	public bool isDead;
 	public bool isFilled = false;
+
 	public override void Anchor(GameObject draggedBox) {
 		invManager.boxes.Add(draggedBox);
 		invManager.CheckCarryOver();
@@ -33,4 +24,12 @@ public class InventoryAnchor : Anchored {
 	public override bool IsAnchorable(GameObject draggedBox) {
 		return !isFilled;
 	}
+
+	public void LoadLevelData (bool dead) {
+		if (dead) {
+			gameObject.transform.GetComponent<SpriteRenderer>().sprite = deadBox;
+			isDead = true;
+			isFilled = true;
+		}
+    }
 }

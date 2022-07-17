@@ -7,6 +7,9 @@ public class LevelData : ScriptableObject {
 	public int numRounds;
 
 	[Space(15)]
+	public int invSlots;
+
+	[Space(15)]
 	public int genCount;
 	public List<int> generationPool;
 

@@ -11,19 +11,9 @@ public class Generator : MonoBehaviour {
 	[SerializeField] GameObject draggingTextCanvas;
 	[SerializeField] GameObject restingTextCanvas;
 	[SerializeField] Button roundButton;
-	[SerializeField] Color inactive;
 	[SerializeField] GameObject genBoxParent;
+	[SerializeField] Sprite deadBox;
 
-	private void Start() {
-		for (int i = 0; i < 6; i++) {
-			GameObject box = genBoxParent.transform.GetChild(i).gameObject;
-			if (i < generationPool.Count) {
-				box.transform.GetChild(0).GetComponent<Text>().text = generationPool[i].ToString();
-			} else {
-				box.GetComponent<SpriteRenderer>().color = inactive;
-			}
-		}
-	}
 	public List<int> RandomPool () {
 		List<int> generatedPool = new List<int>();
 		for (int i = 0; i < generateCount; i++) {
@@ -53,5 +43,18 @@ public class Generator : MonoBehaviour {
 			}
 		}
 		return boxObject;
+	}
+
+	public void LoadLevelData (int genCount, List<int> pool) {
+		generateCount = genCount;
+		generationPool = pool;
+		for (int i = 0; i < 6; i++) {
+			GameObject box = genBoxParent.transform.GetChild(i).gameObject;
+			if (i < generationPool.Count) {
+				box.transform.GetChild(0).GetComponent<Text>().text = generationPool[i].ToString();
+			} else {
+				box.GetComponent<SpriteRenderer>().sprite = deadBox;
+            }
+		}
 	}
 }

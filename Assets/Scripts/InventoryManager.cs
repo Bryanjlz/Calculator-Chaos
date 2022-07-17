@@ -15,7 +15,7 @@ public class InventoryManager : MonoBehaviour {
 	public List<InventoryAnchor> anchors;
 	
 
-	private void Start() {
+	private void Awake() {
 		boxes = new List<GameObject>();
 		anchors = new List<InventoryAnchor>();
 		foreach(InventoryAnchor anchor in anchorParent.GetComponentsInChildren<InventoryAnchor>()) {
@@ -50,4 +50,11 @@ public class InventoryManager : MonoBehaviour {
 			}
 		}
 	}
+
+	public void LoadLevelData (int invSlots) {
+		for (int i = anchors.Count - 1; i >= invSlots; i--) {
+			print(i);
+			anchors[i].LoadLevelData(true);
+        }
+    }
 }

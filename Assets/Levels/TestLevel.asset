@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: TestLevel
   m_EditorClassIdentifier: 
   numRounds: 2
+  invSlots: 6
   genCount: 2
   generationPool: 0c0000000500000003000000
   targets: 0100000002000000
-  isRandEq: 0
+  isRandomEquation: 0
   numEquations: 0
-  operators1: 01000000
-  operators2: 01000000
-  operators3: 
-  operators4: 
+  operators: 0100000001000000
+  text: []
+  pos: []

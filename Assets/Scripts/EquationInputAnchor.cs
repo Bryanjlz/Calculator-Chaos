@@ -31,11 +31,9 @@ public class EquationInputAnchor : Anchored {
 
 	public void Lock () {
 		Destroy(box);
-		sprite.color = new Color(0, 0, 0, 0.5f);
 	}
 	public void Unlock()
 	{
 		isFilled = false;
-		sprite.color = new Color(1f, 1f, 1f, 47f/255f);
 	}
 }

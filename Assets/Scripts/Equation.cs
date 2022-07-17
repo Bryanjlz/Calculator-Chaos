@@ -71,8 +71,6 @@ public class Equation : MonoBehaviour
 		block.currentAnchor = outputAnchor;
 		block.SetTextCanvas(restCan, dragCan);
 		outputAnchor.box = boxObject;
-		// Set transparent
-		boxObject.GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, 0.4f);
 	}
 
 	public void resetInputs()
