@@ -186,8 +186,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3758230725028469922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.25, y: 1.86, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 1.5, y: 2.3600001, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6430418533201092954}
@@ -260,7 +260,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetNumber: 2
   tManager: {fileID: 2741521379295979238}
+  iManager: {fileID: 0}
   deadBox: {fileID: 0}
+  isFilled: 0
 --- !u!1 &5081781850812968590
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorParent: {fileID: 7519408628417473705}
+  restArea: {fileID: 0}
+  completeCounter: 0
 --- !u!1 &5081781851310532705
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 3.875}
+  m_AnchoredPosition: {x: 0, y: 4.125}
   m_SizeDelta: {x: 550, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5081781851469908075
@@ -496,8 +500,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5530796491885618857}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.25, y: 1.85, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -1.5, y: 2.35, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 794404093978364977}
@@ -570,7 +574,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetNumber: 1
   tManager: {fileID: 2741521379295979238}
+  iManager: {fileID: 0}
   deadBox: {fileID: 0}
+  isFilled: 0
 --- !u!1 &5850338027626787451
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,8 +683,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5870189081556650665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.25, y: -3.15, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 1.5, y: -3.15, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2695971378421729891}
@@ -751,7 +757,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetNumber: 6
   tManager: {fileID: 2741521379295979238}
+  iManager: {fileID: 0}
   deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isFilled: 0
 --- !u!1 &6076406627270716180
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,8 +786,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6076406627270716180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.25, y: -0.65, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 1.5, y: -0.39999998, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5398054156596076802}
@@ -852,7 +860,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetNumber: 4
   tManager: {fileID: 2741521379295979238}
+  iManager: {fileID: 0}
   deadBox: {fileID: 0}
+  isFilled: 0
 --- !u!1 &7166573450776061633
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,8 +889,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7166573450776061633}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.25, y: -3.15, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -1.5, y: -3.15, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8686977091430601407}
@@ -953,7 +963,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetNumber: 5
   tManager: {fileID: 2741521379295979238}
+  iManager: {fileID: 0}
   deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  isFilled: 0
 --- !u!1 &7519408628417473705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,8 +1034,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7530588648167342258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.25, y: -0.65, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -1.5, y: -0.39999998, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2725334625370774324}
@@ -1096,7 +1108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetNumber: 3
   tManager: {fileID: 2741521379295979238}
+  iManager: {fileID: 0}
   deadBox: {fileID: 0}
+  isFilled: 0
 --- !u!1 &7958367189734548529
 GameObject:
   m_ObjectHideFlags: 0
