@@ -32,10 +32,16 @@ public class Win : MonoBehaviour
     }
 
 	public void ChangeScene (string sceneName) {
+		// sound!
+		FindObjectOfType<AudioManager>().Play("click");
+
 		SceneManager.LoadScene(sceneName);
     }
 
 	public void Resume (string sceneName) {
+		// sound!
+		FindObjectOfType<AudioManager>().Play("click");
+
 		GameObject.Find("Round").GetComponent<RoundManager>().UnPause();
 		SceneManager.UnloadSceneAsync(sceneName);
     }
