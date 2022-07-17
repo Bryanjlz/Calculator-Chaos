@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
-  m_Name: MyLevel
+  m_Name: TestWin
   m_EditorClassIdentifier: 
-  numRounds: 0
-  genCount: 0
-  generationPool: 
-  targets: 
+  numRounds: 1
+  invSlots: 6
+  genCount: 3
+  generationPool: 01000000
+  targets: 01000000
   isRandomEquation: 0
   numEquations: 0
-  operators: 
+  operators: 00000000000000000000000000000000
+  text: []
+  pos: []

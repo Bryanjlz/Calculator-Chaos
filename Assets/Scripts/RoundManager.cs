@@ -7,12 +7,14 @@ public class RoundManager : MonoBehaviour
 {
 	[SerializeField] int maxRounds;
 	[SerializeField] Text text;
+	[SerializeField] List<Button> buttons;
 	[SerializeField] EquationManager equationManager;
 	[SerializeField] InventoryManager inventoryManager;
 	[SerializeField] TargetManager targetManager;
 	[SerializeField] Generator generator;
 	[SerializeField] LevelData level;
 	public int currentRound;
+	public bool pause;
 
 	//save data
 	public List<int> inventoryNumbers;
@@ -62,9 +64,23 @@ public class RoundManager : MonoBehaviour
 		generator.Generate(inventoryNumbers);
 	}
 
-	public void UndoRound() {
+	public void UndoRound () {
 		ResetRound();
 		Load();
+	}
+
+	public void Pause () {
+		pause = true;
+		foreach (Button b in buttons) {
+			b.interactable = false;
+        }
+    }
+
+	public void UnPause() {
+		pause = false;
+		foreach (Button b in buttons) {
+			b.interactable = true;
+		}
 	}
 
 	public void LoadLevelData (int numRounds) {

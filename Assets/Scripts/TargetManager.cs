@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TargetManager : MonoBehaviour
 {
 	[SerializeField] GameObject anchorParent;
 	[SerializeField] Transform restArea;
+	[SerializeField] RoundManager roundManager;
 	List<TargetAnchor> targets;
 	public int completeCounter;
 
@@ -33,7 +35,8 @@ public class TargetManager : MonoBehaviour
 
 	public void celebrate()
 	{
-		Debug.Log("you win!");
+		roundManager.Pause();
+		SceneManager.LoadScene("Win",LoadSceneMode.Additive);
 	}
 
 	public List<int> GetCompleted () {

@@ -11,7 +11,13 @@ public class Block : MonoBehaviour {
 	GameObject restingTextCanvas;
 	[SerializeField] Sprite targetSprite;
 
-	public Sprite getTargetSprite()
+	private RoundManager roundManager;
+
+    private void Start() {
+		roundManager = GameObject.Find("Round").GetComponent<RoundManager>();
+    }
+
+    public Sprite getTargetSprite()
     {
 		return targetSprite;
     }
@@ -41,7 +47,7 @@ public class Block : MonoBehaviour {
 	
 	// Drag
 	private void OnMouseOver() {
-		if (Input.GetMouseButtonDown(0)) {
+		if (Input.GetMouseButtonDown(0) && !roundManager.pause) {
 			SpriteRenderer currSprite = gameObject.GetComponent<SpriteRenderer>();
 			currSprite.sortingLayerName = "Dragging Block";
 			gameObject.transform.SetParent(draggingTextCanvas.transform);

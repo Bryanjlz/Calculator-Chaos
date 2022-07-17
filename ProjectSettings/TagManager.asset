@@ -54,3 +54,9 @@ TagManager:
   - name: Dragging Block Text
     uniqueID: 2266301625
     locked: 0
+  - name: Fade
+    uniqueID: 841200905
+    locked: 0
+  - name: Additive Scene
+    uniqueID: 408723281
+    locked: 0

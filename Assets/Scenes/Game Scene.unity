@@ -616,6 +616,10 @@ PrefabInstance:
       propertyPath: restArea
       value: 
       objectReference: {fileID: 743278220}
+    - target: {fileID: 2741521379295979238, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: roundManager
+      value: 
+      objectReference: {fileID: 1499032955}
     - target: {fileID: 2747154141556144802, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
       propertyPath: iManager
       value: 
@@ -1185,7 +1189,7 @@ PrefabInstance:
     - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
       propertyPath: level
       value: 
-      objectReference: {fileID: 11400000, guid: 841462d14da0180499194a5ac65f2500, type: 2}
+      objectReference: {fileID: 11400000, guid: 78dd31fd637daf04b92b89a18a1fb9bb, type: 2}
     - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
       propertyPath: generator
       value: 
@@ -1202,6 +1206,10 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 3939354409043597905}
+    - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
+      propertyPath: buttons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1679451080}
     - target: {fileID: 4797683715167320713, guid: a7794734925a92642818864227c93a2b, type: 3}
       propertyPath: m_Pivot.x
       value: 1
