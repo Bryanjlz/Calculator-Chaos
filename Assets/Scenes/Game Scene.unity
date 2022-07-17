@@ -1491,6 +1491,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3939354409043597905}
     - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
+      propertyPath: tutorialTextPrefab
+      value: 
+      objectReference: {fileID: 867298982461136002, guid: 57c2d2cd91d6faa46be5a3b78c50734d, type: 3}
+    - target: {fileID: 1802488032852597213, guid: a7794734925a92642818864227c93a2b, type: 3}
       propertyPath: buttons.Array.data[1]
       value: 
       objectReference: {fileID: 1679451080}

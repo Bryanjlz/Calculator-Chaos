@@ -14,6 +14,7 @@ public class RoundManager : MonoBehaviour
 	[SerializeField] TargetManager targetManager;
 	[SerializeField] Generator generator;
 	[SerializeField] LevelData level;
+	[SerializeField] GameObject tutorialTextPrefab;
 	public int currentRound;
 	public bool pause;
 
@@ -32,6 +33,7 @@ public class RoundManager : MonoBehaviour
 		inventoryManager.LoadLevelData(level.invSlots, level.genCount);
 		targetManager.LoadLevelData(level.targets);
 		generator.LoadLevelData(level.genCount, level.generationPool);
+		LoadTutorialText(level.text, level.pos);
 	}
 
 	public void ProgressRound () {
@@ -103,4 +105,11 @@ public class RoundManager : MonoBehaviour
 		FindObjectOfType<AudioManager>().Play("click");
 		SceneManager.LoadScene("Game Scene");
 	}
+
+	public void LoadTutorialText (List<string> texts, List<int> poss) {
+		for (int i = 0; i < texts.Count; i++) {
+			GameObject text = Instantiate(tutorialTextPrefab);
+			text.GetComponent<TutorialText>().SetText(texts[i], poss[i]);
+		}
+    }
 }

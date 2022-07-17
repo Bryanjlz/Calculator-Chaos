@@ -27,5 +27,5 @@ public class LevelData : ScriptableObject {
 
 	[Space(10)]
 	public List<string> text;
-	public List<Vector2> pos;
+	public List<int> pos;
 }
