@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EquationInputAnchor : Anchored {
 	[SerializeField] Equation eq;
-	[SerializeField] SpriteRenderer sprite;
+	[SerializeField] SpriteRenderer spriteRender;
+	[SerializeField] Sprite usedSprite;
+	[SerializeField] Sprite unusedSprite;
 	public int number;
 	public GameObject box;
 	public bool isFilled = false;
@@ -31,9 +33,11 @@ public class EquationInputAnchor : Anchored {
 
 	public void Lock () {
 		Destroy(box);
+		spriteRender.sprite = usedSprite;
 	}
 	public void Unlock()
 	{
+		spriteRender.sprite = unusedSprite;
 		isFilled = false;
 	}
 }

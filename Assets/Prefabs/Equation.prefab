@@ -98,7 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eq: {fileID: 5577058864222807984}
-  sprite: {fileID: 8140230803106075583}
+  spriteRender: {fileID: 8140230803106075583}
+  usedSprite: {fileID: 21300000, guid: 6d495c8c397f20c4d86c45492105abb2, type: 3}
+  unusedSprite: {fileID: 21300000, guid: 98788b66d68e31a439c029bee1ef082a, type: 3}
   number: 0
   box: {fileID: 0}
   isFilled: 0
@@ -340,7 +342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eq: {fileID: 5577058864222807984}
-  sprite: {fileID: 5931314365464613033}
+  spriteRender: {fileID: 5931314365464613033}
+  usedSprite: {fileID: 21300000, guid: 6d495c8c397f20c4d86c45492105abb2, type: 3}
+  unusedSprite: {fileID: 21300000, guid: 98788b66d68e31a439c029bee1ef082a, type: 3}
   number: 0
   box: {fileID: 0}
   isFilled: 0
