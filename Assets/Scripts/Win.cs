@@ -27,8 +27,9 @@ public class Win : MonoBehaviour
 		}
 	}
 
-	public void NextLevel (string sceneName) {
-		ChangeScene(sceneName);
+	public void NextLevel () {
+		LevelHolder.self.curLevel += 1;
+		ChangeScene("Game Scene");
     }
 
 	public void ChangeScene (string sceneName) {
