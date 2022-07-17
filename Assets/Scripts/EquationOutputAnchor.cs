@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EquationOutputAnchor : Anchored
 {
+	[SerializeField] Sprite deadBox;
+	[SerializeField] Sprite normal;
 	public GameObject box;
 	public Equation eq;
 	public override void Anchor(GameObject draggedBox) {
@@ -25,5 +27,15 @@ public class EquationOutputAnchor : Anchored
 		for (int i = eq.inputAnchors.Count - 1; i >= 0; i--) {
 			eq.inputAnchors[i].Lock();
 		}
+	}
+
+	public void badPreview()
+    {
+		gameObject.GetComponent<SpriteRenderer>().sprite = deadBox;
+    }
+
+	public void backToNormal()
+	{
+		gameObject.GetComponent<SpriteRenderer>().sprite = normal;
 	}
 }

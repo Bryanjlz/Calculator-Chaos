@@ -47,7 +47,16 @@ public class Equation : MonoBehaviour
 		}
 
 		// Create preview
-		CreateOutputBox(result);
+		if (result > -100 && result < 100)
+        {
+			
+			CreateOutputBox(result);
+		} else
+        {
+			outputAnchor.badPreview();
+        }
+		
+
 	}
 
 	private int math (int in1, int in2, Operator o) {
@@ -79,5 +88,6 @@ public class Equation : MonoBehaviour
 		{
 			anchor.Unlock();
 		}
+		outputAnchor.backToNormal();
 	}
 }

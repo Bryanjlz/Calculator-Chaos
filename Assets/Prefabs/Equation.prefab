@@ -526,5 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e849e1b117e9fb942adefb24db49e913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deadBox: {fileID: 21300000, guid: c1c4520ee5b5ce54693f4fad00c57fc9, type: 3}
+  normal: {fileID: 21300000, guid: ded48bc2cc233bf449cb78007ee41d6e, type: 3}
   box: {fileID: 0}
   eq: {fileID: 5577058864222807984}

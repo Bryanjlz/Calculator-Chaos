@@ -26,6 +26,7 @@ public class EquationInputAnchor : Anchored {
 		isFilled = false;
 		number = 0;
 		box = null;
+		eq.outputAnchor.backToNormal();
 		if (eq.outputAnchor.box != null) {
 			Destroy(eq.outputAnchor.box);
 		}
