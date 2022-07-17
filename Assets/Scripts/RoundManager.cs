@@ -47,7 +47,6 @@ public class RoundManager : MonoBehaviour
 		generator.Generate(generator.RandomPool());
 		inventoryManager.CheckCarryOver();
 		Save();
-		UndoRound();
 	}
 
 	public bool IsLastRound () {
