@@ -48,7 +48,7 @@ public class TargetManager : MonoBehaviour
 
 	public void ResetTargets() {
 		foreach (TargetAnchor ta in targets) {
-			if (ta.deadBox == null) {
+			if (!ta.isDead) {
 				ta.isFilled = false;
 			}
 		}

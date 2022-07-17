@@ -45,7 +45,7 @@ public class InventoryManager : MonoBehaviour {
 		}
 		boxes.Clear();
 		foreach (InventoryAnchor ia in anchors) {
-			if (ia.deadBox == null) {
+			if (!ia.isDead) {
 				ia.isFilled = false;
 			}
 		}
