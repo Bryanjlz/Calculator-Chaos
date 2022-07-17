@@ -612,6 +612,10 @@ PrefabInstance:
       propertyPath: iManager
       value: 
       objectReference: {fileID: 3939354409043597905}
+    - target: {fileID: 2741521379295979238, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
+      propertyPath: restArea
+      value: 
+      objectReference: {fileID: 743278220}
     - target: {fileID: 2747154141556144802, guid: 5b266d9aa37b54f4a9984220f2f1b7bb, type: 3}
       propertyPath: iManager
       value: 

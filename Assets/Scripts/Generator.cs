@@ -32,14 +32,16 @@ public class Generator : MonoBehaviour {
 		return generatedPool;
 	}
 
-	public void Generate(List<int> generatedPool) {
+	public List<GameObject> Generate(List<int> generatedPool) {
+		List<GameObject> boxes = new List<GameObject>();
 		for (int i = 0; i < generatedPool.Count; i++) {
-			CreateBox(generatedPool[i]);
+			boxes.Add(CreateBox(generatedPool[i]));
 		}
 		roundButton.transform.GetChild(0).GetComponent<Text>().text = "End Round";
+		return boxes;
 	}
 
-	public void CreateBox(int number) {
+	public GameObject CreateBox(int number) {
 		GameObject boxObject = Instantiate(boxPrefab);
 		boxObject.transform.SetParent(restingTextCanvas.transform);
 		Block block = boxObject.GetComponent<Block>();
@@ -47,8 +49,9 @@ public class Generator : MonoBehaviour {
 		block.SetTextCanvas(restingTextCanvas, draggingTextCanvas);
 		foreach (InventoryAnchor anchor in invManager.anchors) {
 			if (block.TryAnchor(anchor)) {
-				return;
+				return boxObject;
 			}
 		}
+		return boxObject;
 	}
 }

@@ -7,17 +7,17 @@ public class InventoryAnchor : Anchored {
 	[SerializeField] InventoryManager invManager;
 	[SerializeField] public Sprite deadBox;
 
-    public void Start()
-    {
-        if (deadBox != null)
-        {
+	public void Start()
+	{
+		if (deadBox != null)
+		{
 			gameObject.transform.GetComponent<SpriteRenderer>().sprite = deadBox;
 
 			// prevent interaction
 			isFilled = true;
-        }
-    }
-    public bool isFilled = false;
+		}
+	}
+	public bool isFilled = false;
 	public override void Anchor(GameObject draggedBox) {
 		invManager.boxes.Add(draggedBox);
 		invManager.CheckCarryOver();

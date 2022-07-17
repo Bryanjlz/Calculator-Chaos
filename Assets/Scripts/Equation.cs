@@ -76,7 +76,7 @@ public class Equation : MonoBehaviour
 	}
 
 	public void resetInputs()
-    {
+	{
 		foreach (EquationInputAnchor anchor in inputAnchors)
 		{
 			anchor.Unlock();

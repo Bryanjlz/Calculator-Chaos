@@ -28,26 +28,26 @@ public class InventoryManager : MonoBehaviour {
 			roundButton.interactable = true;
 		} else {
 			roundButton.interactable = false;
-        }
+		}
 	}
 
 	public List<int> GetNumbers () {
 		List<int> numbers = new List<int>();
 		foreach (GameObject bo in boxes) {
 			numbers.Add(bo.GetComponent<Block>().number);
-        }
+		}
 		return numbers;
-    }
+	}
 
-    public void ResetInv() {
-        for (int i = restingArea.childCount - 1; i >= 0; i--) {
+	public void ResetInv() {
+		for (int i = restingArea.childCount - 1; i >= 0; i--) {
 			Destroy(restingArea.GetChild(i).gameObject);
-        }
+		}
 		boxes.Clear();
 		foreach (InventoryAnchor ia in anchors) {
 			if (ia.deadBox == null) {
 				ia.isFilled = false;
 			}
 		}
-    }
+	}
 }

@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1802488032852597213}
         m_TargetAssemblyTypeName: RoundManager, Assembly-CSharp
-        m_MethodName: ResetRound
+        m_MethodName: UndoRound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -268,6 +268,7 @@ MonoBehaviour:
   inventoryManager: {fileID: 0}
   targetManager: {fileID: 0}
   generator: {fileID: 0}
+  restingArea: {fileID: 0}
   currentRound: 0
   inventoryNumbers: 
   completeTargets: 

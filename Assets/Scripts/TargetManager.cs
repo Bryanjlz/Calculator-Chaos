@@ -5,6 +5,7 @@ using UnityEngine;
 public class TargetManager : MonoBehaviour
 {
 	[SerializeField] GameObject anchorParent;
+	[SerializeField] Transform restArea;
 	List<TargetAnchor> targets;
 	public int completeCounter;
 	bool isComplete = false;
@@ -57,5 +58,17 @@ public class TargetManager : MonoBehaviour
 			}
 		}
 		completeCounter = 0;
+	}
+	public void LoadTargets(List<int> completeTargets, List<GameObject> targetBoxes) {
+		for (int i = 0; i < completeTargets.Count; i++) {
+			Transform box = targetBoxes[i].transform;
+			int num = completeTargets[i];
+			foreach (TargetAnchor ta in targets) {
+				if (ta.targetNumber == num && !ta.isFilled) {
+					box.position = ta.transform.position;
+					box.GetComponent<Block>().TryAnchor(ta);
+				}
+			}
+		}
 	}
 }

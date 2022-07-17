@@ -27,12 +27,12 @@ public class EquationManager : MonoBehaviour {
 		eqObj.transform.SetParent(gameObject.transform);
 		eqObj.transform.position = pos;
 		equations.Add(eqObj);
-    }
+	}
 	public void resetEquations()
-    {
+	{
 		foreach (GameObject equation in equations)
-        {
+		{
 			equation.GetComponent<Equation>().resetInputs();
-        }
-    }
+		}
+	}
 }
