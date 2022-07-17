@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1cdeab8898d75409be3e02149c284a, type: 3}
   m_Name: tutorial 1
   m_EditorClassIdentifier: 
-  numRounds: 0
-  invSlots: 0
-  genCount: 0
-  generationPool: 
-  targets: 
+  numRounds: 3
+  invSlots: 4
+  genCount: 1
+  generationPool: 00000000
+  targets: 010000000100000001000000
   isRandomEquation: 0
   numEquations: 0
   operators: 
-  text: []
-  pos: []
+  text:
+  - TEST TEXT
+  pos: 01000000
