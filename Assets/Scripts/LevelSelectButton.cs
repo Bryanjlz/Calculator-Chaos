@@ -22,7 +22,7 @@ public class LevelSelectButton : MonoBehaviour
 	}
 
 	private void OnMouseEnter() {
-		levelNameText.text = levelName;
+		levelNameText.text = levelName.ToUpperInvariant();
 	}
 
 	private void OnMouseExit() {
