@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InventoryAnchor : Anchored {
 	[SerializeField] InventoryManager invManager;
-	[SerializeField] Sprite deadBox;
+	[SerializeField] public Sprite deadBox;
 
     public void Start()
     {
@@ -17,7 +17,7 @@ public class InventoryAnchor : Anchored {
 			isFilled = true;
         }
     }
-    bool isFilled = false;
+    public bool isFilled = false;
 	public override void Anchor(GameObject draggedBox) {
 		invManager.boxes.Add(draggedBox);
 		invManager.CheckCarryOver();

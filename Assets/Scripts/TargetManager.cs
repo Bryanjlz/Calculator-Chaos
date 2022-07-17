@@ -45,8 +45,17 @@ public class TargetManager : MonoBehaviour
 		foreach (TargetAnchor ta in targets) {
 			if (ta.getIsFilled() && ta.deadBox == null) {
 				completeTargets.Add(ta.targetNumber);
-            }
-        }
+			}
+		}
 		return completeTargets;
-    }
+	}
+
+	public void ResetTargets() {
+		foreach (TargetAnchor ta in targets) {
+			if (ta.deadBox == null) {
+				ta.isFilled = false;
+			}
+		}
+		completeCounter = 0;
+	}
 }

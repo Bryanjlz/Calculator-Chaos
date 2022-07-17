@@ -38,4 +38,16 @@ public class InventoryManager : MonoBehaviour {
         }
 		return numbers;
     }
+
+    public void ResetInv() {
+        for (int i = restingArea.childCount - 1; i >= 0; i--) {
+			Destroy(restingArea.GetChild(i).gameObject);
+        }
+		boxes.Clear();
+		foreach (InventoryAnchor ia in anchors) {
+			if (ia.deadBox == null) {
+				ia.isFilled = false;
+			}
+		}
+    }
 }

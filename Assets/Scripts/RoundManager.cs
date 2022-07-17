@@ -37,4 +37,10 @@ public class RoundManager : MonoBehaviour
         inventoryNumbers = inventoryManager.GetNumbers();
         completeTargets = targetManager.GetCompleted();
     }
+
+    public void ResetRound() {
+        print(2);
+        inventoryManager.ResetInv();
+        targetManager.ResetTargets();
+    }
 }

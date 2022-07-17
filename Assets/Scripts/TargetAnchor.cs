@@ -9,7 +9,7 @@ public class TargetAnchor : Anchored
     [SerializeField] TargetManager tManager;
     [SerializeField] InventoryManager iManager;
     [SerializeField] public Sprite deadBox;
-    bool isFilled = false;
+    public bool isFilled = false;
     public bool getIsFilled()
     {
         return isFilled;
