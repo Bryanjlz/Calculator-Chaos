@@ -56,6 +56,9 @@ public class Block : MonoBehaviour {
 	}
 
 	private void Release() {
+		// sound!
+		FindObjectOfType<AudioManager>().Play("click");
+
 		isDragging = false;
 		// Look for close anchor to go to
 		foreach (GameObject anchor in GameObject.FindGameObjectsWithTag("Anchor")) {

@@ -27,7 +27,7 @@ public class RoundManager : MonoBehaviour
 		// Load Level
 		LoadLevelData(level.numRounds);
 		equationManager.LoadLevelData(level.isRandomEquation, level.numEquations, level.operators);
-		inventoryManager.LoadLevelData(level.invSlots);
+		inventoryManager.LoadLevelData(level.invSlots, level.genCount);
 		targetManager.LoadLevelData(level.targets);
 		generator.LoadLevelData(level.genCount, level.generationPool);
 	}

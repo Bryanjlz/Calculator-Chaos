@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Kevin Test 1
   m_EditorClassIdentifier: 
   numRounds: 3
-  invSlots: 8
+  invSlots: 9
   genCount: 6
   generationPool: 01000000030000000500000007000000090000000b000000
-  targets: 1200000018000000190000001e00000032000000
+  targets: 1200000014000000180000001900000032000000
   isRandomEquation: 0
   numEquations: 4
   operators: 00000000000000000100000002000000

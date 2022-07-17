@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour {
-	[SerializeField] int carryOverCount;
+	int carryOverCount;
 	[SerializeField] GameObject anchorParent;
 	[SerializeField] Button roundButton;
 	[SerializeField] Transform restingArea;
@@ -51,7 +51,8 @@ public class InventoryManager : MonoBehaviour {
 		}
 	}
 
-	public void LoadLevelData (int invSlots) {
+	public void LoadLevelData (int invSlots, int genCount) {
+		carryOverCount = invSlots - genCount;
 		for (int i = anchors.Count - 1; i >= invSlots; i--) {
 			anchors[i].LoadLevelData(true);
         }
