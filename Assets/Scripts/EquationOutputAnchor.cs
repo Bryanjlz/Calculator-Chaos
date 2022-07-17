@@ -25,6 +25,8 @@ public class EquationOutputAnchor : Anchored
 	public void PickUp() {
 		box.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 		for (int i = eq.inputAnchors.Count - 1; i >= 0; i--) {
+			// sound!
+			FindObjectOfType<AudioManager>().Play("executeEquation");
 			eq.inputAnchors[i].Lock();
 		}
 	}

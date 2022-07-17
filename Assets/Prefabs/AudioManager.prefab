@@ -53,7 +53,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: win
     clip: {fileID: 8300000, guid: 90e2a5628515bd9419765e988d40eb72, type: 3}
-    volume: 0.8
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -73,5 +73,11 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 97b4d4d32422bd041b7d8e525810739d, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: executeEquation
+    clip: {fileID: 8300000, guid: 909516ef1834e254bbe89523c3790062, type: 3}
+    volume: 0.562
+    pitch: 0.88
     loop: 0
     source: {fileID: 0}
