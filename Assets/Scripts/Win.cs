@@ -28,8 +28,12 @@ public class Win : MonoBehaviour
 	}
 
 	public void NextLevel () {
-		LevelHolder.self.curLevel += 1;
-		ChangeScene("Game Scene");
+		if (LevelHolder.self.curLevel == LevelHolder.self.levelData.Count - 1) {
+			ChangeScene("Level Select");
+		} else {
+			LevelHolder.self.curLevel += 1;
+			ChangeScene("Game Scene");
+		}
     }
 
 	public void ChangeScene (string sceneName) {
