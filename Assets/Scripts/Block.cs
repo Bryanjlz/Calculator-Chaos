@@ -65,7 +65,7 @@ public class Block : MonoBehaviour {
 		isDragging = false;
 		// Look for close anchor to go to
 		foreach (GameObject anchor in GameObject.FindGameObjectsWithTag("Anchor")) {
-			if (Vector2.Distance(transform.position, anchor.transform.position) <= 1f) {
+			if (Vector2.Distance(transform.position, anchor.transform.position) <= 1.25f) {
 				Anchored anchorScript = anchor.GetComponent<Anchored>();
 				if (TryAnchor (anchorScript)) {
 					return;
